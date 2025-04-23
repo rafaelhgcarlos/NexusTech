@@ -1,54 +1,50 @@
-# React + TypeScript + Vite
+# 🧾 NexusTech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **NexusTech**, an intuitive and modern inventory and sales management system built to help businesses stay on top of their stock in real time. Efficiently register, monitor, and manage your inventory and sales with smart alerts and insightful dashboards.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 About the Project
 
-## Expanding the ESLint configuration
+This project was developed for academic purposes with the goal of offering a practical solution for:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Registering and tracking product inventory.
+- Monitoring sales and product movement.
+- Generating reports to support data-driven decisions.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The system ensures better control and transparency in inventory operations, helping users avoid losses and optimize their stock flow.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Project Vision
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Our mission is to create a lightweight yet powerful platform that:
+
+1. Streamlines inventory and sales management.
+2. Automates alerts and reports for smarter operations.
+3. Supports strategic decision-making with data dashboards.
+
+The MVP focuses on essential features such as product registration, real-time stock and sales tracking, and low stock alerts. Future versions will introduce user role management, purchase orders, and integrations with external services.
+
+---
+
+## 🧰 Core Features
+
+- Product registration with name, quantity, price, expiration date, and category.
+- Low stock alert system.
+- Product entry and exit logs.
+- Sales registration and tracking.
+- Reports on inventory levels, expiration dates, and product movement.
+- Admin dashboard with KPIs for decision-making.
+
+---
+
+## 🔧 Tech Stack
+
+This project leverages modern web technologies:
+
+- **Frontend**: React + Vite + Tailwind CSS + TypeScript  
+- **Backend**: Firebase  
+- **Database**: Firebase Firestore  
+- **Authentication**: Firebase Authentication
+  
