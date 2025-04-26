@@ -6,7 +6,7 @@ export default function getButtonStyle(
     style: ButtonStyle,
     state: ButtonState
 ){
-    const baseClasses = 'w-auto flex justify-center transition-all rounded-md';
+    const baseClasses = 'w-auto flex justify-center items-center transition-all rounded-md';
 
     const sizeClasses = {
         sm:'px-3 py-2 gap-1 text-sm',
