@@ -1,4 +1,5 @@
 import {LucideIcon} from "lucide-react";
+import {ChangeEvent} from "react";
 
 export type InputStyle = 'primary' | 'secondary';
 export type InputSize = 'sm' | 'md' | 'lg';
@@ -16,5 +17,6 @@ export interface InputFieldProps {
     type?: InputType;
     icon?: LucideIcon;
     iconPosition?: InputIconPosition;
-    onChange?: () => void;
+    value?: string;
+    onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
