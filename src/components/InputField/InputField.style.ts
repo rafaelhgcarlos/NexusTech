@@ -7,7 +7,7 @@ export function getInputFieldStyle(size: InputSize,
                                    iconPosition?: InputIconPosition
 ) {
 
-    const baseClasses = 'w-full px-2 py-2 peer border-1 rounded-md focus:outline-none focus:ring-1 focus:ring-green-400';
+    const baseClasses = 'w-full px-2 py-2 peer border-1 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-400';
 
     const sizeClasses = {
         sm: 'text-sm h-10',
@@ -34,13 +34,13 @@ export function getInputFieldStyle(size: InputSize,
     };
 
     const styleClasses = {
-        primary: 'bg-green-200/10 border-green-500 text-green-950',
-        secondary: 'bg-green-200 border-green-500 text-black',
+        primary: 'bg-blue-200/10 border-stone-800 text-blue-950',
+        secondary: 'bg-blue-200 border-blue-500 text-black',
     };
 
     const hoverClasses = {
-        primary: 'hover:border-green-400 hover:bg-green-200/15',
-        secondary: 'hover:bg-green-200/90',
+        primary: 'hover:border-blue-400 hover:bg-blue-200/15',
+        secondary: 'hover:bg-blue-200/90',
     }
 
     const stateClasses = {

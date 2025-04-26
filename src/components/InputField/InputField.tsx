@@ -3,6 +3,7 @@ import {getInputFieldStyle} from "./InputField.style.ts";
 
 export default function InputField({
                                        id = '',
+                                       value = '',
                                        label = '',
                                        style = 'primary',
                                        size = 'md',
@@ -27,6 +28,7 @@ export default function InputField({
             <input
                 type={type}
                 id={id}
+                value={value}
                 className={inputStyle}
                 placeholder={label}
                 onChange={onChange}
