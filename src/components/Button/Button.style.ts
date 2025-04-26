@@ -6,7 +6,7 @@ export default function getButtonStyle(
     style: ButtonStyle,
     state: ButtonState
 ){
-    const baseClasses = 'flex items-center transition-all rounded-md';
+    const baseClasses = 'w-auto flex justify-center transition-all rounded-md';
 
     const sizeClasses = {
         sm:'px-3 py-2 gap-1 text-sm',
@@ -23,13 +23,13 @@ export default function getButtonStyle(
     }
 
     const styleClasses = {
-        primary: 'text-stone-50 bg-green-500',
-        secondary: 'text-green-500 border border-green-500',
+        primary: 'text-stone-50 bg-blue-500',
+        secondary: 'text-blue-500 border border-blue-500',
     }
 
     const hoverClasses = {
-        primary: 'hover:bg-green-400 hover:border-green-400',
-        secondary: 'hover:bg-green-200/50',
+        primary: 'hover:bg-blue-400',
+        secondary: 'hover:bg-blue-300/80',
     }
 
     const stateClasses = {
