@@ -6,6 +6,7 @@ import {FirebaseError} from "firebase/app";
 import {useNavigate} from "react-router-dom";
 import {useState} from "react";
 import Spinner from "../components/Spinner/Spinner.tsx";
+import {LockIcon, LucideMail} from "lucide-react";
 
 
 export default function Login() {
@@ -68,6 +69,7 @@ export default function Login() {
                       className={'w-full flex flex-col justify-center items-center'}>
                     <div className={'w-full flex flex-col gap-5 mb-10'}>
                         <InputField id='email'
+                                    icon={LucideMail}
                                     label={'Email'}
                                     type={'email'}
                                     value={email}
@@ -78,6 +80,7 @@ export default function Login() {
                                     }}
                         />
                         <InputField id='password'
+                                    icon={LockIcon}
                                     label={'Password'}
                                     type={showPassword ? 'text' : 'password'}
                                     value={password}
