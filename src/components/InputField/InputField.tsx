@@ -1,5 +1,5 @@
 import {InputFieldProps} from './InputField.types.ts'
-import {getInputFieldStyle} from "./InputField.style.ts";
+import {getInputFieldStyle} from "./InputField.styles.ts";
 
 export default function InputField({
                                        id = '',
