@@ -1,13 +1,26 @@
-import {Routes, Route, Navigate} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import Login from './pages/Login';
 import NotFound from "./pages/NotFound.tsx";
+import {AuthProvider} from "./contexts/AuthContext.tsx";
+import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
 
 export default function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Navigate to="/login" />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="*" element={<NotFound/>}/>
-        </Routes>
+        <AuthProvider>
+            <Routes>
+                <Route path="/" element={<Login/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="*" element={<NotFound/>}/>
+                <Route
+                    path="/dashboard"
+                    element={
+                        <ProtectedRoute>
+                            <Dashboard/>
+                        </ProtectedRoute>
+                    }
+                />
+            </Routes>
+        </AuthProvider>
     );
 }

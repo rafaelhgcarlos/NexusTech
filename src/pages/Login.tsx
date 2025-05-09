@@ -32,7 +32,7 @@ export default function Login() {
 
         login(email, password)
             .then(() => {
-                navigate("/login");
+                navigate("/dashboard");
             })
             .catch((error) => {
                 if (error instanceof FirebaseError) {
