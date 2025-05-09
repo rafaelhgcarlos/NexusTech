@@ -1,5 +1,5 @@
 import {ButtonProps} from "./Button.types.ts";
-import getButtonStyle from "./Button.style.ts";
+import getButtonStyle from "./Button.styles.ts";
 
 function Button({
                     style = 'primary',
